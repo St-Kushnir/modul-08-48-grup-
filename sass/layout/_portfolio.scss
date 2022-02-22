@@ -1,0 +1,111 @@
+.portfolio-content__list {
+    @include justify-list;
+    margin-bottom: 50px;
+    }
+
+.filter-list__item {
+    & +& {
+    margin-left: 8px;
+    }
+}
+
+.filter-list__btn {
+font-family: inherit; 
+@include font (null, 500, 16px, 1.62, 0.03em);    
+text-align: center;
+border: 0px;
+border-radius: 4px;
+padding-top: 6px;
+padding-right: 22px;
+padding-bottom: 6px;
+padding-left: 22px;
+transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+    &:hover, 
+    &:focus {
+    color: var(--hero-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.projects {
+display: flex;
+margin-left: -30px;
+margin-bottom: -30px;
+flex-wrap: wrap;
+}
+
+.projects__item {
+flex-basis: calc(100% / 9 - 30px);
+margin-left: 30px;
+margin-bottom: 30px;
+}
+
+.projects__link {
+    display: inline-block;
+    transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+        &:hover,
+        &:focus {
+        background-color: #FFFFFF;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        .projects__overlay{
+            transform: translateY(0%);
+            }
+    }
+}
+    
+.projects__tumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects__overlay { 
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(33, 150, 243, 0.9);
+transform: translateY(150%);
+transition: transform 250ms var(--timing-function);
+}
+
+.projects__hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projects__text-hover {
+    width: 322px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--hero-text-color);
+    }
+
+.projects__content {
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
+border-top: 0px;
+box-sizing: border-box;
+padding: 20px 24px;
+position: relative;
+}
+
+.projects__title {
+@include font (null, 700, 18px, 2.00, 0.06em);
+color: var(--filter-title-color);
+margin-top: 20px;
+margin-bottom: 4px;
+}
+
+.projects__text {
+@include font (null, null, 16px, 1.87, 0.03em);
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color: var(--about-desc-color);
+}
+

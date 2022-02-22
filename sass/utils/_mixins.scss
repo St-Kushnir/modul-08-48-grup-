@@ -1,0 +1,18 @@
+
+@mixin align-list {
+    display: flex;
+    align-items: center;
+}
+
+@mixin justify-list {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin font ($fst, $fwt, $fsz, $lh, $ls) {
+    font-style: $fst;
+    font-weight: $fwt;
+    font-size: $fsz;
+    line-height: $lh;
+    letter-spacing: $ls;
+}

@@ -1,0 +1,22 @@
+:root {
+    --accent-color: #2196F3;
+    --header-logo-color: #000000;
+    --navigation-text-color: #212121;
+    --header-text-color: #757575;
+    --hero-text-color: #FFFFFF;
+    --hero-back-color: #2196F3;
+    --about-subtitle-color: #212121;
+    --about-desc-color: #757575;
+    --title-text-color: #212121;
+    --footer-logo-color: #FFFFFF;
+    --footer-text-color: #FFFFFF;
+    --footer-links-color: rgba(255, 255, 255, 0.6);
+    --hero-background-color: #C4C4C4;
+    --filter-title-color:#212121;
+    --footer-back-color: #2F303A;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo__accent {
+    color: var(--accent-color);
+}

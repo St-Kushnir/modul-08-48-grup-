@@ -1,0 +1,35 @@
+.about-list {
+    @include justify-list;
+    }
+    
+    .about-list__item {
+        width: 270px;
+        & + & {
+        margin-left: 30px;
+                }
+    }
+
+    .about-list__content {
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    @include align-list;
+    justify-content: center;
+    }
+    
+    .about-list__icon {
+    display: flex;
+    }
+    
+    .about-list__title {
+        @include font (null, 700, 14px, 1.14, 0.03em);
+        text-transform: uppercase;
+        color: var(--about-subtitle-color);
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    .about-list__description {
+        @include font (null, null, 14px, 1.71, 0.03em);
+        color: var(--about-desc-color);
+    }
